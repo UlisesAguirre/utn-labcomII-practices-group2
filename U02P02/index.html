@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html> 
+ <head>
+   <title>Tabla básica y compleja</title>
+   <style>
+    table,
+    td,
+    th 
+    {
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 5px;
+    }
+    table {
+    width: 100%;
+    }
+    tfoot{
+      font-style: italic;
+      background-color: rgb(221, 192, 209);
+    }
+    thead
+    {
+      background-color: rgb(228, 228, 222);
+    }
+    caption{
+      font-size: large;
+      border-style: unset;
+    }
+   </style>
+  </head>
+ <body>
+
+   <table>
+   <caption>Listado de materias</caption>
+   <thead>
+    <tr>
+      <td><strong>Materia</strong></td>
+      <td><strong>Modalidad</strong></td>
+      <td><strong>Horario</strong></td>
+      <td><strong>Dias</strong></td>
+    </tr>
+   </thead>
+   <tbody>
+    <tr>
+      <td>Laboratorio de computación II</td>
+      <td>Virtual</td>
+      <td>18:00 - 20:30</td>
+      <td>Martes y Miércoles</td>
+    </tr>
+   
+    <tr>
+       <td>Programación II</td>
+       <td>Virtual</td>
+       <td>20:30 - 10:30</td>
+       <td>Jueves y Viernes</td>
+    </tr>
+
+   </tbody>
+   </table>
+   
+
+   <table>
+   <caption>Materias Anuales</caption>
+   <thead>
+    <tr>
+      <th><strong>Año</strong></th>
+      <th><strong>Materia</strong></th>
+      <th><strong>Modalidad</strong></th>
+      <th><strong>Horas en total</strong></th>
+      <th><strong>CVG</strong></th>
+    </tr>
+   </thead>
+   <tbody>
+   <tr>
+     <td rowspan="2">1er año</td>
+     <td>Laboratorio de computación II</td>
+     <td>Virtual</td>
+     <td>170</td>
+     <td rowspan="4"><a href="https://frro.cvg.utn.edu.ar/">Enlace CVG</a></td>
+     
+   </tr>
+   
+   <tr>
+      <td>Programación II</td>
+      <td>Virtual</td>
+      <td>200</td>
+
+   </tr>
+   <tr>
+      <td rowspan="2">2do año</td>
+      <td>Estadistica II</td>
+      <td>Presencial</td>
+      <td>190</td>
+      
+    </tr>
+    <tr>
+      <td>Ingles III</td>
+      <td>Virtual</td>
+      <td>160</td>
+      
+    </tr>
+   </tbody>
+    <tfoot>
+      <tr>
+         <td colspan="5"><center>UNIVERSIDAD TECNOLOGICA NACIONAL</center></td>
+      </tr>
+    </tfoot>
+   
+   </table>
+   
+   
+ </body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <h1>Formulario</h1>
+
+ <form>
+  <fieldset>
+    <legend>Datos personales</legend>
+  <p><label for="estudiante"></label></p>
+  <input type="text" id="estudiante" name="Estudiante" value="Estudiante"/>
+  <p><label for="nombre">Nombre completo</label>
+  <input type="text" id="nombre" name="nombre"/></p>
+  <p><label for="email">Email</label>
+  <input type="text" id="email" name="email"/></p>
+  <p><label for="edad">Edad</label>
+  <input type="number" id="edad" name="edad"/></p>
+  <label for="nacionalidad">Nacionalidad</label>
+  <select name="seleccionable" id="nacionalidad">
+    <option value="Argentina">Argentina</option>
+    <option value="Chilena">Chilena</option>
+    <option value="Italiana">Italiana</option>
+    <option value="Paraguaya">Paraguaya</option>
+  </select>
+  <p><label for="laboral">Condicion Laboral</label>
+  <select name="laboral" id="laboral">
+    <option value="Desempleado">Desempleado</option>
+    <option value="En busqueda laboral">En busqueda laboral</option>
+    <option value="Trabajo part time">Trabajo part time</option>
+    <option value="Trabajo full time">Trabajo full time</option></p>
+  </select>
+  </fieldset> 
+  <fieldset>
+    <legend>Gustos personales</legend>
+    <p><label for="musica">Gustos musicales</label>
+  <input type="text" id="musica" name="musica"/></p>
+  <p><label for="comida">Comidas preferidas</label></p>
+  <select multiple name="comida" id="comida">
+    <option value="Tacos">Tacos</option>
+    <option value="Milanesas">Milanesas</option>
+    <option value="Pastas">Pastas</option>
+    <option value="Asado">Asado</option>
+  </select>
+    <p><input type="submit" value="Enviar"></p>
+    <p><input type="checkbox" name="Recordar datos"/>Recordar datos</p>
+  </fieldset>
+ </form>
+</html>
